@@ -141,6 +141,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   /* Set height to auto to make sure value matches correct ratio */
   height: auto;
   margin-right: 40px;
+  border-radius: 50%;
 }
 
 .profile_content {
