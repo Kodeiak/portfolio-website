@@ -298,6 +298,10 @@ textarea {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  #about-picture {
+    width: 360px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -345,15 +349,16 @@ textarea {
   }
 }
 
+
 .svg-container {
   width: 100%;
-  height: 505px;
+  height: fit-content;
   display: flex;
 }
 
 #about-picture {
   max-height: 505px;
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   justify-self: center;
 }
