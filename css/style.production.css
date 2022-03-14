@@ -283,6 +283,8 @@ button:hover, button:focus, .button:hover, .button:focus {
   background-color: var(--light-blue-magenta);
   grid-area: 3 / 1 / 4 / 3;
   padding: 30px;
+  width: 100%;
+  justify-self: center;
 }
 
 td {
