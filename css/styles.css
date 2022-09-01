@@ -56,13 +56,6 @@ a {
 }
 
 
-/* removing until I can figure out how to not have it affect the below
-a:visited {
-  /* selected link 
-  color: #aa8439;
-}
-*/
-
 /* list selectors side by side to apply the same styling to multiple elements */
 a:hover, a:focus {
   font-weight: var(--bold);
@@ -171,25 +164,40 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center;
 }
 
+/**
+  * Work Page
+  */
+
+.project {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 20px;
+}
+
+.project_details, .project_img {
+  margin: 0 20px;
+
+}
+/* 
 /* GRID STYLIZATION */
 /* start grid fallback */
-.grid_item {
+/* .grid_item {
   display: inline-block;
   width: 33%;
-}
+} */
 /* end fallback */
-
+/* 
 @supports (display: grid) {
 .grid {
   display: grid;
   /* best practice to define only columns or rows (typically columns) and the other will be autopopulated */
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin: 0;
-}
+} */ */
 
 /* Give grid items light background to see what's going on */
-.grid_item {
+/* .grid_item {
   background-color: lightgray;
   width: auto;
   min-height: auto;
@@ -203,7 +211,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .grid_item:last-child {
   grid-area: 1 / 3 / 4 / 4;
 }
-}
+} */
 
 /* About Me Page */
 
