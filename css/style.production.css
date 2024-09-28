@@ -49,6 +49,12 @@ body {
   background-position: center center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
 }
 
 /* Optional: Overlay effect to darken the image */
@@ -161,16 +167,20 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .profile_wrapper {
   max-width: 600px;
+  width: 600px;
   margin: 40px auto;
   padding: 100px 0;
-  /* background-color: #add8e695; */
   background-color: #dbdbdb;
   opacity: 80%;
   border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .profile {
-  min-width: 360px;
   max-width: 600px;
   margin: auto;
   display: flex;
@@ -186,7 +196,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   height: auto;
   border-radius: 50%;
   max-width: 100%;
-  height: auto;
   margin-bottom: 20px;
 }
 
@@ -520,6 +529,14 @@ textarea {
 
   .about-me_table {
     grid-area: auto;
+  }
+
+  @media (max-width: 768px) {
+    .profile_wrapper {
+      width: 360px;
+      max-height: 90%;
+      max-width: 90%;
+    }
   }
 
 }
